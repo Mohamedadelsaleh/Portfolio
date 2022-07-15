@@ -4,6 +4,7 @@ import Hero from './Hero'
 import Services from '../Services/Services'
 import Counter from '../Common/Counter'
 import Portfolio from '../Portfolio/Portfolio'
+import Testimonials from '../Testimonials/Testimonials'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Services />
             <Counter />
             <Portfolio />
+            <Testimonials />
         </>
     )
 }

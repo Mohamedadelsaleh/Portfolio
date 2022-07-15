@@ -5,6 +5,7 @@ import Header from '../Common/Header';
 import Home from '../Home/Home';
 import Portfolio from '../Portfolio/Portfolio';
 import Services from '../Services/Services';
+import Testimonials from '../Testimonials/Testimonials';
 
 
 const Pages = () => {
@@ -17,6 +18,7 @@ const Pages = () => {
                     <Route exact path="/about" component={About} />
                     <Route exact path="/services" component={Services} />
                     <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/testimonials" component={Testimonials} />
                 </Switch>
             </Router>
         </>
