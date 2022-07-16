@@ -477,7 +477,7 @@ footer i {
 .container {
     max-width: 90%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
   .right,
@@ -565,13 +565,13 @@ footer i {
     height: auto;
     width: 100%;
     padding:0;
-    overflow: hidden;
+
   }
 
   .testimonials .container {
     max-width: 80%;
     margin: auto 2%;
-    overflow: hidden;
+
   }
   
   .testimonials{
@@ -579,12 +579,12 @@ footer i {
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+
   }
   
   .testimonials::after{
     background-image: url(./Assets/testimonials-bg.png);
-    overflow: hidden;
+
   }
   
   .testimonials .box{
@@ -594,7 +594,7 @@ footer i {
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+
   }
 
 
