@@ -69,9 +69,13 @@ button {
   cursor: pointer;
 }
 
+.fontSize {
+  font-size:20px;
+}
 .primaryBtn {
   background: none;
   border: 2px solid var(--primaryColor);
+  margin: 10px 0px;
 }
 
 
@@ -86,7 +90,8 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999999999;
+  z-index: 999;
+  
 }
 
 header a{
@@ -113,11 +118,15 @@ header a{
     width: 100%;
     display: block;
     color: var(--white);
+    overflow: hidden;
   }
   .toggle{
     display: block;
     background: none;
     font-size: 25px;
+    margin: 0;
+    height: 10vh;
+    overflow: hidden;
   }
   .hideMenu{
     display: block;
@@ -126,6 +135,7 @@ header a{
     left: 0;
     width: 100%;
     background-color: var(--headingColor);
+    overflow: hidden;
   }
 }
 
@@ -330,7 +340,7 @@ article .box:hover .overlay::after{
 }
 
 .testimonials::after{
-  background-image: url();
+  background-image: url(./Assets/testimonials-bg.png);
 
 }
 
@@ -375,4 +385,229 @@ label{
 
 /***************************************************************/
 
+/************************************** Blog *******************/
+.blog img{
+  width: 100%;
+}
 
+.blog .box {
+  background-color: var(--primaryBackground);
+  border-radius: 10px;
+}
+
+.blog .text {
+  padding: 10px 30px;
+}
+
+
+/***************************************************************/
+
+/*********************************** Contact *******************/
+
+.contact{
+  margin: 80px 0;
+}
+
+.contact .right, .contact .left {
+  padding: 30px;
+}
+
+.contact .flex input:nth-child(1) {
+  margin-right: 10px;
+}
+
+.contact button, 
+.contact textarea,
+.contact input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+
+}
+
+
+/***************************************************************/
+
+/************************* Footer *******************************/
+footer {
+  text-align: center;
+  background-color: var(--primaryBackground);
+  padding: 70px;
+  margin-top: 50px;
+}
+footer i {
+  margin: 5px;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+
+/****************************************************************/
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    overflow: hidden;
+  }
+  .heroContainer {
+    max-width: 80%;
+  }
+
+  .hero::after {
+    background-image: url("./Assets/home-bg.png");
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+  }
+  section {
+    height: auto;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  .contact .flexsb,
+  .about .flex {
+    flex-direction: column;
+  }
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+  .right,
+  .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    padding: 0px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .about .primaryBtn {
+    margin-left: 0;
+}
+
+  .grid4,
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+  }
+  .services .container {
+    max-width: 95%;
+    margin: auto 2%;
+    overflow: hidden;
+  }
+  
+  .services .box {
+    background-color: var(--primaryBackground);
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  
+  .counter .container {
+    max-width: 90%;
+    margin: auto 2%;
+    overflow: hidden;
+  }
+  .counter{
+    height: 75vh;
+    overflow: hidden;
+  }
+  
+  .hero.counter::after{
+    background-image: url('./Assets/some-facts-bg.png');
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  .counter .box{
+    padding: 0px 16%;
+    overflow: hidden;
+  }
+
+  article {
+    margin: 0;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+
+  .catButton{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .catButton button{
+    text-transform: capitalize;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  .testimonials.hero {
+    height: auto;
+    width: 100%;
+    padding:0;
+    overflow: hidden;
+  }
+
+  .testimonials .container {
+    max-width: 80%;
+    margin: auto 2%;
+    overflow: hidden;
+  }
+  
+  .testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .testimonials::after{
+    background-image: url(./Assets/testimonials-bg.png);
+    overflow: hidden;
+  }
+  
+  .testimonials .box{
+    max-width: 100%;
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+  .contact .right, .contact .left {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+
+}

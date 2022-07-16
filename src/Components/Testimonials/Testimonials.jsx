@@ -18,25 +18,25 @@ const Testimonials = () => {
 
     return (
         <>
-            <div className="testimonials hero">
+            <section className="testimonials hero">
                 <div className="container">
                 <Slider {...settings}>
                         {testimonials.map((val,idx)=>(
-                            <div className="box">
-                                <i>
+                            <div className="box" key={idx} data-aos='zoom-in'>
+                                <i data-aos='zoom-out-up'>
                                     <FormatQuoteIcon />
                                 </i>
-                                    <p>{val.text}</p>
-                                    <div className="img">
+                                    <p data-aos='zoom-out-down'>{val.text}</p>
+                                    <div className="img" data-aos='zoom-out-right'>
                                         <img src={val.image} alt="" />
                                     </div>
-                                    <h3>{val.name}</h3>
-                                    <label>{val.post}</label>
+                                    <h3 data-aos='zoom-out-left'>{val.name}</h3>
+                                    <label data-aos='zoom-out'>{val.post}</label>
                             </div>
                         ))}
                     </Slider>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

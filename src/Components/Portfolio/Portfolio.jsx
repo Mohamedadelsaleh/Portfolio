@@ -3,15 +3,16 @@ import {portfolio} from '../Common/data'
 import VisibilityOutlinedIcon  from '@mui/icons-material/VisibilityOutlined'
 import Heading from '../Common/Heading'
 
-const allCategories = ['all',... new Set(portfolio.map((item)=>item.category))]
+const allCategories = ['all',...new Set(portfolio.map((item)=>item.category))]
 
 const Portfolio = () => {
 
     const [list, setList] = useState(portfolio)
-    const [category, setCategory] = useState(allCategories)
-
+    // const [category, setCategory] = useState(allCategories)
+    // console.log(setCategory);
+    const category = allCategories;
     const filterItems = (category) =>{
-        const newCategory = portfolio.filter((item,idx)=>item.category === category)
+        const newCategory = portfolio.filter((item)=>item.category === category)
         setList(newCategory)
 
         if(category === 'all'){
@@ -25,13 +26,13 @@ const Portfolio = () => {
                 <div className="container">
                     <Heading title='Portfolio' />
                     <div className="catButton">
-                        {category.map((category)=>(
-                            <button className='primaryBtn' onClick={()=>filterItems(category)}>{category}</button>
+                        {category.map((category,idx)=>(
+                            <button className='primaryBtn' onClick={()=>filterItems(category)} key={idx} data-aos='zoom-out-down'>{category}</button>
                         ))}
                     </div>
                     <div className="content grid3">
                         {list.map((val,idx) =>(
-                            <div className="box">
+                            <div className="box" key={idx} data-aos='fade-up'>
                                 <div className="img">
                                     <img src={val.cover} alt='' />
                                 </div>

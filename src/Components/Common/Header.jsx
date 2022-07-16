@@ -14,11 +14,11 @@ const Header = () => {
             <header>
                 <div className="container flexsb">
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="" data-aos="fade-right" />
                     </div>
                     <div className={responsive ? 'hideMenu' :'nav'}>
                         {navlink.map((link,idx)=>(
-                                <Link to={link.url} key={idx} >{link.text}</Link>
+                                <Link to={link.url} key={idx}>{link.text}</Link>
                             )
                         )}
                     </div>

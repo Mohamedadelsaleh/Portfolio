@@ -1,4 +1,4 @@
-import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined, FavoriteBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material"
+import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined, FavoriteBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, LinkedIn, GitHub, YouTube } from "@mui/icons-material"
 
 export const navlink = [
   {
@@ -184,7 +184,7 @@ export const blog = [
     date: "Jun 27, 2022",
     author: "Dorian Gray",
     desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b1.png",
+    cover: "https://firebasestorage.googleapis.com/v0/b/protofile-38809.appspot.com/o/port1.jpg?alt=media&token=8a135edd-8a56-4801-94f8-0e47a24766e7",
   },
   {
     id: 2,
@@ -192,7 +192,7 @@ export const blog = [
     date: "Jun 27, 2022",
     author: "Dorian Gray",
     desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b2.png",
+    cover: "https://firebasestorage.googleapis.com/v0/b/protofile-38809.appspot.com/o/port1.jpg?alt=media&token=8a135edd-8a56-4801-94f8-0e47a24766e7",
   },
   {
     id: 3,
@@ -200,7 +200,7 @@ export const blog = [
     date: "Jun 27, 2022",
     author: "Dorian Gray",
     desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b3.png",
+    cover: "https://firebasestorage.googleapis.com/v0/b/protofile-38809.appspot.com/o/port1.jpg?alt=media&token=8a135edd-8a56-4801-94f8-0e47a24766e7",
   },
 ]
 export const contact = [
@@ -225,10 +225,10 @@ export const social = [
     icon: <Facebook />,
   },
   {
-    icon: <Twitter />,
+    icon: <LinkedIn />,
   },
   {
-    icon: <Instagram />,
+    icon: <GitHub />,
   },
   {
     icon: <YouTube />,

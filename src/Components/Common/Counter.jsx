@@ -8,7 +8,7 @@ const Counter = () => {
             <div className="hero counter">
                 <div className="container grid3 grid4 ">
                     {project.map((val,idx)=>(
-                        <div className="box">
+                        <div className="box" key={idx} data-aos='zoom-in'>
                             <i>{val.icon}</i>
                             <h1 className="heading">
                                 <CountUp enableScrollSpy duration={2} end={val.num} />
