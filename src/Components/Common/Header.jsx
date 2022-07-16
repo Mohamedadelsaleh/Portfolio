@@ -22,8 +22,8 @@ const Header = () => {
                             )
                         )}
                     </div>
-                    <button className="toggle" onClick={()=>{setResponsive(!responsive)}}>
-                            <Menu className="icon"></Menu>
+                    <button className="toggle" onClick={()=>{setResponsive(!responsive)}}> <span className="material-icons" aria-hidden="true">
+                            <Menu className="icon"></Menu></span>
                     </button>
                 </div>
             </header>
