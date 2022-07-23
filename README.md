@@ -22,7 +22,7 @@ My Protofolio
 
 ## Live Demo
 
-[Protofolio Demo Live Link](https://mohamedadelsaleh.github.io/Admin-Dashboard/)
+[Protofolio Demo Live Link](https://mohamedadelsaleh.github.io/Portfolio/)
 
 
 ## Setup
