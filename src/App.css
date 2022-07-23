@@ -540,6 +540,9 @@ footer i {
     overflow: hidden;
   }
 
+  .grid4{
+    height: 75vh;
+  }
   
   .counter .container {
     max-width: 90%;
@@ -558,8 +561,9 @@ footer i {
   }
 
   .counter .box{
-    padding: 0px 16%;
     overflow: hidden;
+    margin-top: 50%;
+    margin-bottom: 50%;
   }
 
   article {

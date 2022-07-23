@@ -45,7 +45,7 @@ const Contact = () => {
                                     <input type="email" placeholder='Your Email' name='from_mail' value={toSend.from_mail} onChange={handleChange}  data-aos='flip-right'/>
                                 </div>
                                 <input type="text" placeholder="Subject" name='subject' value={toSend.subject} onChange={handleChange} data-aos='flip-up' />
-                                <textarea cols="30" rows="10" name='message' value={toSend.message} onChange={handleChange} data-aos='flip-down'></textarea>
+                                <textarea cols="30" rows="10" name='message' placeholder='Message' value={toSend.message} onChange={handleChange} data-aos='flip-down'></textarea>
                                 <button data-aos='zoom-in-up'>Submit</button>
                             </form>
                         </div>
