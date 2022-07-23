@@ -39,7 +39,7 @@ const Portfolio = () => {
                                 <div className="overlay">
                                     <h3>{val.title}</h3>
                                     <span>{val.name}</span>
-                                    <VisibilityOutlinedIcon />
+                                    <span className="visit"><a href={val.link} target="_blank" rel="noreferrer"><VisibilityOutlinedIcon /></a></span>
                                 </div>
                             </div>
                         ))}
