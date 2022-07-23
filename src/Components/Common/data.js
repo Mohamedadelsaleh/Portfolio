@@ -2,31 +2,31 @@ import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined
 
 export const navlink = [
   {
-    url: "/",
+    url: "",
     text: "Home",
   },
   {
-    url: "/about",
+    url: "about",
     text: "About",
   },
   {
-    url: "/services",
+    url: "services",
     text: "Services",
   },
   {
-    url: "/portfolio",
+    url: "portfolio",
     text: "Portfolio",
   },
   {
-    url: "/testimonials",
+    url: "testimonials",
     text: "Testimonials",
   },
   // {
-  //   url: "/blog",
+  //   url: "blog",
   //   text: "Blog",
   // },
   {
-    url: "/contact",
+    url: "contact",
     text: "Contact",
   },
 ]
